@@ -172,76 +172,94 @@ the committed files still match the script.
 
 | File | Bindings |
 | --- | --- |
-| `Moza Flight - AB6 + MTQ GA - AB6 Base - airplanes controls.xml` | 10 |
-| `Moza Flight - AB6 + MTQ GA - AB6 Base - general controls.xml` | 14 |
-| `Moza Flight - AB6 + MTQ GA - MTQ Quadrant - airplanes controls.xml` | 23 |
-| `Moza Flight - AB6 + MTQ GA - MTQ Quadrant - general controls.xml` | 3 |
+| `Moza Flight - AB6 + MTQ GA - AB6 Base - airplanes controls.xml` | 28 |
+| `Moza Flight - AB6 + MTQ GA - AB6 Base - general controls.xml` | 17 |
+| `Moza Flight - AB6 + MTQ GA - MTQ Quadrant - airplanes controls.xml` | 27 |
+| `Moza Flight - AB6 + MTQ GA - MTQ Quadrant - general controls.xml` | 6 |
+
+**78 bindings**, built against the real button map read from MOZA Cockpit on
+2026-09-17 — every button number below is confirmed to exist on this rig.
 
 Load all four — one per device per category.
 
 **Division of labour:** the stick flies the aeroplane and owns every camera; the
 quadrant runs the engine, the autopilot and the systems.
 
-## AB6 Base — airplanes
+## AB6 Base + MHG grip — airplanes
 
-| Control | Does |
-| --- | --- |
-| L-Axis X / L-Axis Y | Ailerons / elevator |
-| R-Axis Z | Rudder |
-| Button 1 | Wheel brakes (held) |
-| Button 49 | Parking brake |
-| Button 50 | Strobe lights |
-| Button 53 / 54 | Rudder trim left / right |
-| Button 55 | Pitot heat |
-| Button 56 | Electric fuel pump |
+| Control | Physical | Does |
+| --- | --- | --- |
+| L-Axis X / Y | base gimbal | Ailerons / elevator |
+| R-Axis Z | grip twist | Rudder |
+| **1** | trigger, stage 2 | Wheel brakes |
+| **6** | trigger, stage 1 | Carb heat |
+| **3** | nosewheel steering lock | Tailwheel lock |
+| **4** | Launch (guarded) | Landing gear |
+| **5** | head button, lower right | Electric fuel pump |
+| **7 / 9** | Hat A up / down | **Elevator trim** |
+| **8 / 10** | Hat A right / left | Aileron trim |
+| **11** | Hat A push | Rudder trim reset |
+| **17 / 19** | Hat C up / down | **Altimeter baro** |
+| **18** | Hat C right | COM radio swap |
+| **20 / 21** | Hat C left / push | Rudder trim left / right |
+| **23 / 24** | 3-pos switch up / down | Master battery / alternator |
+| **49–56** | base button columns | Cabin lights, alternate static, nav, beacon, strobe, pitot heat, parking brake, starter |
 
-## AB6 Base — general
+## AB6 Base + MHG grip — general
 
-Unchanged from the original GA profile: hat does cockpit quick views 1–4 inside and
-chase looks outside, button 2 cycles view mode, 8 / 10 step cockpit cameras, 29
-resets all three camera types at once.
+| Control | Physical | Does |
+| --- | --- | --- |
+| R-Axis X / Y | mini stick | Quick views 1–4 inside, chase looks outside |
+| **2** | head button, left | Cycle view mode |
+| **12 / 14** | Hat B up / down | Cockpit camera next / previous |
+| **13 / 15** | Hat B right / left | Zoom in / out |
+| **16** | Hat B push | **Reset all cameras** |
+| Slider X | base thumbwheel | Cockpit camera zoom |
 
-## MTQ Quadrant — airplanes
+## MTQ + TQF — airplanes
 
-| Control | Does |
-| --- | --- |
-| R-Axis X | Throttle (all engines) |
-| R-Axis Y | Propeller RPM |
-| Slider X | Mixture |
-| Slider Y | Flaps |
-| Buttons 5–16 | Autopilot panel — unchanged from upstream |
-| Button 25 / 27 | Landing / taxi lights |
-| Button 29 | Landing gear |
-| Button 41 / 42 | Beacon / nav lights |
-| Button 43 | Avionics master |
-| Button 64 | Elevator trim |
+| Control | Physical | Does |
+| --- | --- | --- |
+| R-Axis X / Y | throttle levers 1 / 2 | Throttle / propeller RPM |
+| Slider X | speedbrake lever | Mixture |
+| Slider Y | flap lever (detented 0/1/2/3/FULL) | Flaps |
+| **1–4** | A1–A4 annunciators | APR hold, VS hold, VS up / down |
+| **5–10** | 2×3 grid | NAV, HDG, SPD, ALT, flight director, **AP master** |
+| **11 / 12 / 13** | rotary encoder | Altitude down / up / sync to current |
+| **14 / 15 / 16** | rotary encoder | Heading bug left / right / sync to current |
+| **25 / 27 / 29** | 2-pos toggles | Avionics master, magnetos up / down |
+| **53 / 54** | TQF right hat | Flaps up / down |
+| **55 / 56** | TQF right hat | Landing / taxi lights |
 
-## MTQ Quadrant — general
+## MTQ + TQF — general
 
-| Control | Does |
-| --- | --- |
-| L-Axis X / L-Axis Y | Slide cockpit viewpoint |
-| Button 62 | Cockpit quick view 5 — save it looking down at the quadrant |
+| Control | Physical | Does |
+| --- | --- | --- |
+| L-Axis X / Y | TQF left thumb stick | Slide cockpit viewpoint |
+| **62** | thumb stick push | Quick view 5 |
+| **63 / 64 / 65** | left-module buttons | ATC menu, EFB, aircraft labels |
 
-## What changed from the source profiles, and why
+## Deliberately left free
 
-- **Throttle moved to the quadrant.** The original GA profile put it on the base's
-  Slider Y, which collided with the MTQ throttles. The stick no longer touches
-  engine controls at all.
-- **Elevator trim is the MTQ wheel (64), not stick buttons.** Mixing an absolute
-  axis with incremental buttons means the wheel snaps trim back to its physical
-  position the moment you touch it. The freed stick buttons 53/54 became rudder
-  trim.
-- **Flaps moved to a proportional axis** on the quadrant, so stick buttons 55/56
-  became pitot heat and fuel pump.
-- **Gear is the quadrant only** (29), so base button 50 became strobes.
-- **Buttons 41/42 stopped being the afterburner detent pair** and **43 stopped
-  being spoiler arm** — neither belongs on a GA aeroplane. They are now beacon,
-  nav and avionics master.
-- **The autopilot block (5–16) was left exactly as upstream had it**, on the
-  assumption those are labelled physical switches. Remapping them would make the
-  printing lie.
-- **MTQ button 62 is no longer a second camera reset** — the AB6 already owns that.
+- **31–43** — lever detent virtual buttons. **41 and 42 are the afterburner pair**
+  and assert whenever a lever crosses the detent, which on a GA aeroplane is just
+  full power for takeoff. An earlier revision had beacon and nav lights there,
+  which would have flipped both on every departure.
+- **17–21** — the 5-position rotary. Ideal for a magneto selector, but the events
+  are aircraft-specific.
+- **22–24, 49–51, 57–61** — remaining MTQ toggle and TQF right-module switches.
+- **AB6 22, Dial (Slider Y) and its detents 57–62** — spare.
+
+## Two upstream bindings that never worked
+
+Both found by checking the profiles against the real button map:
+
+- **AB6 button 29** (camera resets). The grip stops at 24 and the base starts at
+  49 — **there is no button 29 on this hardware**, so that binding never fired.
+  Resets now live on Hat B push (16).
+- **MTQ button 64** (`KEY_AXIS_ELEV_TRIM_SET`). 64 is an ordinary button on the
+  TQF left module, not a trim wheel, so binding an axis action to it did nothing.
+  Elevator trim is now Hat A up/down on the grip.
 
 ## Confirmed hardware inventory
 
@@ -297,19 +315,19 @@ If you remove the detent mechanically — MOZA document how — those two become
 to use. Until then they stay empty, and beacon and nav lights are waiting for a
 home.
 
-## Still unbound, and worth claiming
+## Claimed since the button map arrived
 
-Three pools are sitting idle. Exact button numbers need MOZA Cockpit's
-**Button Number** panel, which shows the live map for whichever handle is fitted.
+All three pools that were idle in the first revision are now in use:
 
-- **The four MHG management hats — 16 signals, entirely unused.** Only the mini
-  stick is bound, and only for camera views. This is the largest untapped resource
-  on the rig.
-- **The MTQ toggle switches**, which MOZA point straight at magnetos, fuel cutoff
-  and master switches — exactly the startup and taxi items still missing here.
-- **The AB6 sliders in Mixed Mode**, which emit button signals as well as axis
-  data, and the **TQF thumb stick**, which can run as 4/8-way buttons instead of
-  axes. Elevator and rudder trim on that thumb stick would suit GA well.
+- **The MHG grip hats.** Hat A is the trim cluster, Hat B the camera hat, Hat C
+  altimeter and radio. Only the mini stick was bound before.
+- **The MTQ toggle switches** — avionics master and magnetos, which is what MOZA
+  recommend them for.
+- **The TQF modules** — the left thumb stick and its three buttons, and the right
+  hat for flaps and the lights you want on the takeoff roll.
+
+What remains free is listed under *Deliberately left free* above, and is free for
+a reason rather than by omission.
 
 # Notes, oddities and limits
 

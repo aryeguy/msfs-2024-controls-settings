@@ -58,8 +58,16 @@
 		<Action ActionName="KEY_ADF2_WHOLE_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AILERON_TRIM_DISABLED_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AILERON_TRIM_DISABLED_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AILERON_TRIM_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AILERON_TRIM_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_AILERON_TRIM_LEFT" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 10">9</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AILERON_TRIM_RIGHT" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 8">7</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_ALL_LIGHTS_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ALTERNATOR_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ALTERNATOR_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -80,7 +88,11 @@
 		<Action ActionName="KEY_ANTI_ICE_SET_ENG3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ANTI_ICE_SET_ENG4" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ANTI_ICE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ANTI_ICE_TOGGLE_ENG1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ANTI_ICE_TOGGLE_ENG1" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 6">5</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_ANTI_ICE_TOGGLE_ENG2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ANTI_ICE_TOGGLE_ENG3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ANTI_ICE_TOGGLE_ENG4" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -234,7 +246,11 @@
 		<Action ActionName="KEY_COM_RADIO_FRACT_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COM_RADIO_FRACT_INC_CARRY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COM_RADIO_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_COM_RADIO_SWAP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COM_RADIO_SWAP" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 18">17</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_COM_RADIO_WHOLE_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COM_RADIO_WHOLE_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COM_RECEIVE_ALL_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -336,8 +352,16 @@
 		<Action ActionName="KEY_ELECTRICAL_LINE_BREAKER_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ELECTRICAL_LINE_CONNECTION_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ELECTRICAL_LINE_CONNECTION_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ELEV_TRIM_DN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ELEV_TRIM_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ELEV_TRIM_DN" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 9">8</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_ELEV_TRIM_UP" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 7">6</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_ELEVATOR_TRIM_DISABLED_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ELEVATOR_TRIM_DISABLED_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ELT_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -445,7 +469,11 @@
 		<Action ActionName="KEY_GEAR_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GEAR_EMERGENCY_HANDLE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GEAR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GEAR_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_GEAR_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
+			<Primary>
+				<KEY Information="Joystick Button 4">3</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_GEAR_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GLARESHIELD_LIGHTS_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GLARESHIELD_LIGHTS_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -475,8 +503,16 @@
 		<Action ActionName="KEY_ISOLATE_TURBINE_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ISOLATE_TURBINE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ISOLATE_TURBINE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_KOHLSMAN_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_KOHLSMAN_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_KOHLSMAN_DEC" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 19">18</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_KOHLSMAN_INC" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 17">16</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_LANDING_LIGHT_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LANDING_LIGHT_HOME" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LANDING_LIGHT_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -652,7 +688,7 @@
 		<Action ActionName="KEY_PARKING_BRAKE_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PARKING_BRAKES" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
 			<Primary>
-				<KEY Information="Joystick Button 49">48</KEY>
+				<KEY Information="Joystick Button 55">54</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_PARKING_BRAKES_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -668,7 +704,7 @@
 		<Action ActionName="KEY_PITOT_HEAT_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PITOT_HEAT_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 55">54</KEY>
+				<KEY Information="Joystick Button 54">53</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_PLASMA_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -817,13 +853,17 @@
 		<Action ActionName="KEY_RUDDER_TRIM_DISABLED_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_RUDDER_TRIM_LEFT" ValueEvent="0.000000" Delay="2.000000" Flag="1">
 			<Primary>
-				<KEY Information="Joystick Button 53">52</KEY>
+				<KEY Information="Joystick Button 20">19</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_RUDDER_TRIM_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_RUDDER_TRIM_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 11">10</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_RUDDER_TRIM_RIGHT" ValueEvent="0.000000" Delay="2.000000" Flag="1">
 			<Primary>
-				<KEY Information="Joystick Button 54">53</KEY>
+				<KEY Information="Joystick Button 21">20</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_RUDDER_TRIM_SET_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -894,7 +934,7 @@
 		<Action ActionName="KEY_STROBES_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_STROBES_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 50">49</KEY>
+				<KEY Information="Joystick Button 53">52</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_SYNC_FLIGHT_DIRECTOR_PITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -989,7 +1029,11 @@
 		<Action ActionName="KEY_TOGGLE_AFTERBURNER3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_AFTERBURNER4" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ALL_STARTERS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_ALTERNATE_STATIC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_ALTERNATE_STATIC" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 50">49</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_ALTERNATOR1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ALTERNATOR2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ALTERNATOR3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -997,11 +1041,19 @@
 		<Action ActionName="KEY_TOGGLE_ARM_AUTOFEATHER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ATTITUDE_CAGE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_AVIONICS_MASTER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_BEACON_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_CABIN_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_BEACON_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 52">51</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_TOGGLE_CABIN_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 49">48</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_ELECT_FUEL_PUMP" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 56">55</KEY>
+				<KEY Information="Joystick Button 5">4</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_TOGGLE_ELECT_FUEL_PUMP1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1024,12 +1076,24 @@
 		<Action ActionName="KEY_TOGGLE_GPS_DRIVES_NAV1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_LAUNCH_BAR_SWITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_LOGO_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_MASTER_ALTERNATOR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_MASTER_BATTERY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_MASTER_ALTERNATOR" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 24">23</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_TOGGLE_MASTER_BATTERY" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 23">22</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_MASTER_BATTERY_ALTERNATOR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_MASTER_IGNITION_SWITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_MASTER_STARTER_SWITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_NAV_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_NAV_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 51">50</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_PRIMER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_PRIMER1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_PRIMER2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1040,13 +1104,21 @@
 		<Action ActionName="KEY_TOGGLE_RAMPTRUCK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_RECOGNITION_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_SPEAKER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_STARTER1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_STARTER1" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 56">55</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_STARTER2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_STARTER3" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_STARTER4" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_STRUCTURAL_DEICE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_TACAN_DRIVES_NAV1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_TAILWHEEL_LOCK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_TAILWHEEL_LOCK" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 3">2</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_TAXI_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_THROTTLE1_REVERSE_THRUST" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_THROTTLE2_REVERSE_THRUST" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>

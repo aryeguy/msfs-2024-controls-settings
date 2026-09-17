@@ -113,7 +113,11 @@
 				<KEY Information="Joystick Button 12">11</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_AP_APR_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_AP_APR_HOLD" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 1">0</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_AP_APR_HOLD_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_APR_HOLD_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_ATT_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -179,12 +183,24 @@
 		<Action ActionName="KEY_AP_SPD_VAR_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_SPD_VAR_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_SPD_VAR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AP_VS_HOLD" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_AP_VS_HOLD" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 2">1</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_AP_VS_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_VS_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_VS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AP_VS_VAR_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AP_VS_VAR_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_AP_VS_VAR_DEC" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 4">3</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_AP_VS_VAR_INC" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 3">2</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_AP_WING_LEVELER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_WING_LEVELER_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AP_WING_LEVELER_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -229,11 +245,7 @@
 		<Action ActionName="KEY_AXIS_CONDITION_LEVER_3_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_CONDITION_LEVER_4_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_CONDITION_LEVER_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_AXIS_ELEV_TRIM_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4">
-			<Primary>
-				<KEY Information="Joystick Button 64">63</KEY>
-			</Primary>
-		</Action>
+		<Action ActionName="KEY_AXIS_ELEV_TRIM_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AXIS_FLAPS_SET" ValueEvent="0.000000" Delay="2.000000" Flag="4">
 			<Primary>
 				<KEY Information="Joystick Slider Y ">530</KEY>
@@ -418,10 +430,18 @@
 		<Action ActionName="KEY_FLAPS_CONTINUOUS_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FLAPS_CONTINUOUS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FLAPS_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_FLAPS_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_FLAPS_DOWN" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 54">53</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_FLAPS_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FLAPS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_FLAPS_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_FLAPS_UP" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 53">52</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_FUEL_DUMP_SWITCH_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FUEL_DUMP_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FUEL_PUMP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -485,11 +505,7 @@
 		<Action ActionName="KEY_GEAR_DOWN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GEAR_EMERGENCY_HANDLE_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GEAR_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_GEAR_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
-			<Primary>
-				<KEY Information="Joystick Button 29">28</KEY>
-			</Primary>
-		</Action>
+		<Action ActionName="KEY_GEAR_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GEAR_UP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GLARESHIELD_LIGHTS_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_GLARESHIELD_LIGHTS_ON" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -539,7 +555,7 @@
 		<Action ActionName="KEY_LANDING_LIGHTS_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_LANDING_LIGHTS_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 25">24</KEY>
+				<KEY Information="Joystick Button 55">54</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_LIGHT_POTENTIOMETER_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -554,8 +570,16 @@
 		<Action ActionName="KEY_MAGNETO_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MAGNETO_START" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MAGNETO1_BOTH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MAGNETO1_DECR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MAGNETO1_INCR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MAGNETO1_DECR" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 29">28</KEY>
+			</Primary>
+		</Action>
+		<Action ActionName="KEY_MAGNETO1_INCR" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 27">26</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_MAGNETO1_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MAGNETO1_OFF" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_MAGNETO1_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1042,7 +1066,7 @@
 		<Action ActionName="KEY_TOGGLE_ATTITUDE_CAGE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_AVIONICS_MASTER" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 43">42</KEY>
+				<KEY Information="Joystick Button 25">24</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_TOGGLE_BEACON_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1097,7 +1121,7 @@
 		<Action ActionName="KEY_TOGGLE_TAILWHEEL_LOCK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_TAXI_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 27">26</KEY>
+				<KEY Information="Joystick Button 56">55</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_TOGGLE_THROTTLE1_REVERSE_THRUST" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>

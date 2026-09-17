@@ -28,7 +28,11 @@
 		<Action ActionName="KEY_EYE_TRACKING_RESET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_FORCE_SAFE_BOOT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_HEAD_TRACKING_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_MENU_SR_EFB_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_MENU_SR_EFB_TOGGLE" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 64">63</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_RESET_CAMERA_VR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_SCREEN_NARRATOR_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_SWITCH_VR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -296,7 +300,11 @@
 		<Action ActionName="KEY_AP_SPD_VAR_SET_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_APU_EXTINGUISH_FIRE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ATC_MENU_CLOSE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ATC_MENU_OPEN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ATC_MENU_OPEN" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 63">62</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_AUDIO_PANEL_VOLUME_DEC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AUDIO_PANEL_VOLUME_INC" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_AUDIO_PANEL_VOLUME_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -892,7 +900,11 @@
 		<Action ActionName="KEY_THROTTLE4_INCREASE_SMALL_EX1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_AIRCRAFT_EXIT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_AIRCRAFT_EXIT_FAST" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_AIRCRAFT_LABELS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_TOGGLE_AIRCRAFT_LABELS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
+			<Primary>
+				<KEY Information="Joystick Button 65">64</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_TOGGLE_AIRPORT_NAME_DISPLAY" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ANTIDETONATION_TANK_VALVE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_DAMAGE_TEXT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>

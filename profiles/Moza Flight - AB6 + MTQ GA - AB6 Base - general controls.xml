@@ -130,7 +130,11 @@
 		<Action ActionName="KEY_COCKPIT_UPPER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 	</Context>
 	<Context ContextName="COCKPIT_GLOBAL_CAMERA">
-		<Action ActionName="KEY_COCKPIT_CAMERA_ZOOM_AXIS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_COCKPIT_CAMERA_ZOOM_AXIS" ValueEvent="0.000000" Delay="2.000000" Flag="4">
+			<Primary>
+				<KEY Information="Joystick Slider X ">514</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_COCKPIT_CAMERA_ZOOM_AXIS_LOCKABLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_FREELOOK_HRZ_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_FREELOOK_VRTC_SET" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1000,10 +1004,18 @@
 		<Action ActionName="KEY_WINDOW_TITLES_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_YAXIS_INVERT_TOGGLE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ZOOM_1X" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ZOOM_IN" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ZOOM_IN" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 13">12</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_ZOOM_IN_FINE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ZOOM_MINUS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_ZOOM_OUT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
+		<Action ActionName="KEY_ZOOM_OUT" ValueEvent="0.000000" Delay="2.000000" Flag="1">
+			<Primary>
+				<KEY Information="Joystick Button 15">14</KEY>
+			</Primary>
+		</Action>
 		<Action ActionName="KEY_ZOOM_OUT_FINE" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_ZOOM_PLUS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="MENU_CONTENTMANAGER_DEPENDENCIES" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1197,7 +1209,7 @@
 	<Context ContextName="EXTERNAL_CAMERA">
 		<Action ActionName="KEY_CAMERACHASE_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
 			<Primary>
-				<KEY Information="Joystick Button 29">28</KEY>
+				<KEY Information="Joystick Button 16">15</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_CHASE_FOCUS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1340,12 +1352,12 @@
 	<Context ContextName="INSTRUMENTS_CAMERA">
 		<Action ActionName="KEY_COCKPIT_BACKCYCLE" ValueEvent="0.000000" Delay="2.000000" Flag="2050">
 			<Primary>
-				<KEY Information="Joystick Button 10">9</KEY>
+				<KEY Information="Joystick Button 14">13</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_COCKPIT_CYCLE" ValueEvent="0.000000" Delay="2.000000" Flag="2050">
 			<Primary>
-				<KEY Information="Joystick Button 8">7</KEY>
+				<KEY Information="Joystick Button 12">11</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_COCKPIT_INSTR_AUTOSELECT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1535,7 +1547,7 @@
 		<Action ActionName="KEY_COCKPIT_INSTRUMENT9" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_COCKPIT_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="8194">
 			<Primary>
-				<KEY Information="Joystick Button 29">28</KEY>
+				<KEY Information="Joystick Button 16">15</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_CYCLE_PILOTVIEW_BACK" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1630,7 +1642,7 @@
 		<Action ActionName="KEY_PC_FPV_LOOK_LEFT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_PC_FPV_LOOK_RESET" ValueEvent="0.000000" Delay="2.000000" Flag="2">
 			<Primary>
-				<KEY Information="Joystick Button 29">28</KEY>
+				<KEY Information="Joystick Button 16">15</KEY>
 			</Primary>
 		</Action>
 		<Action ActionName="KEY_PC_FPV_LOOK_RIGHT" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
