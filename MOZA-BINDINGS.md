@@ -243,13 +243,73 @@ resets all three camera types at once.
   printing lie.
 - **MTQ button 62 is no longer a second camera reset** — the AB6 already owns that.
 
-## Scope limit, stated plainly
+## Confirmed hardware inventory
 
-"All buttons available" means **every button that appears anywhere in the six
-upstream profiles**, because that is the only evidence I have that a given button
-exists on this hardware. I had no MOZA documentation and no web access, so if your
-AB6 grip or MTQ has buttons nobody bound upstream, they are still free. The
-generator makes adding them a two-line change.
+Verified 2026-09-17 against MOZA's own user manuals and support knowledge base —
+not inferred from the profiles.
+
+**AB6 FFB Base** — Windows enumerates it as `MOZA AB6 FFB Base`, which is why the
+XML says that.
+
+- **8 RGB-backlit buttons**
+- **2 axis sliders**, switchable between Button / Axis / **Mixed** mode
+- Pitch and roll from the force-feedback gimbal
+- Takes MH16, MHG, MA3X and third-party grips
+
+**MHG Flightstick** — the grip in the AB6 bundle.
+
+- **Mini stick**, 2-axis analog *(this is what the view bindings use, not a hat)*
+- **Four management hats**: Sensor, Navigation, Target, Countermeasure
+- **Dual-stage trigger** (two signals), **Launch**, **Mode Cycle**,
+  **Nosewheel Steering Lock**
+- **Z-axis** twist — the rudder axis
+- Warning Button Light is an indicator, not an input
+
+The arithmetic closes exactly: 4 hats × 4 directions = 16, plus Launch, Mode
+Cycle, both trigger stages and the nosewheel lock = 21, plus the base's 8 = **29**,
+which is the "29 programmable signals" MOZA advertise for the bundle.
+
+**MTQ — Multi-function Throttle Quadrant.**
+
+- Four axes: throttle 1, throttle 2, flaps, speedbrake
+- **Rotary encoders**, which MOZA themselves recommend for "HDG, ALT, SPD, V/S"
+- **Toggle switches** bottom right, 2- and 3-position, "suitable for engine start,
+  fuel cutoff, or master switches"
+- Detents generate **six virtual buttons** for the Cutoff / Idle / Afterburner zones
+- Flaps and speedbrake levers also support Button / Axis / Mixed mode
+- Three interchangeable handles: **TQA** (Airbus, idle+climb detents, reverse
+  thrust lock), **TQF** (fighter, afterburner detent, grip speedbrake button,
+  thumb stick), **TQB** (general aviation, smooth travel, no detents)
+
+## Tuned for the TQF handle
+
+These profiles assume a **TQF** fighter handle on the MTQ, which is what this rig
+has. That drives one deliberate omission:
+
+**Buttons 41 and 42 are left unbound on purpose.** They are the afterburner-zone
+virtual buttons. On the TQF they assert whenever a throttle lever crosses the
+afterburner detent — which in a GA aeroplane just means "full power for takeoff".
+Anything bound there fires on every departure and every go-around. An earlier
+revision of this file had beacon and nav lights on them, which would have flipped
+both lights during every takeoff roll.
+
+If you remove the detent mechanically — MOZA document how — those two become safe
+to use. Until then they stay empty, and beacon and nav lights are waiting for a
+home.
+
+## Still unbound, and worth claiming
+
+Three pools are sitting idle. Exact button numbers need MOZA Cockpit's
+**Button Number** panel, which shows the live map for whichever handle is fitted.
+
+- **The four MHG management hats — 16 signals, entirely unused.** Only the mini
+  stick is bound, and only for camera views. This is the largest untapped resource
+  on the rig.
+- **The MTQ toggle switches**, which MOZA point straight at magnetos, fuel cutoff
+  and master switches — exactly the startup and taxi items still missing here.
+- **The AB6 sliders in Mixed Mode**, which emit button signals as well as axis
+  data, and the **TQF thumb stick**, which can run as 4/8-way buttons instead of
+  axes. Elevator and rudder trim on that thumb stick would suit GA well.
 
 # Notes, oddities and limits
 
@@ -274,11 +334,16 @@ toggles and resets — but Microsoft publish no reference, so I have described w
 each control *does* from its action name, which is reliable, rather than inventing
 meanings for the flags.
 
-**Physical button numbers are not physical positions.** The AB6 is a force-feedback
-base; its buttons come from whichever grip is fitted, so "Button 53" means different
-hardware on different grips. Where I have grouped buttons (the 5–16 autopilot block,
-41/42 as detent switches) that is inference from the binding pattern, not from MOZA
-documentation — I had no access to any.
+**Button numbers shift with the fitted hardware.** The AB6's buttons come partly
+from the base and partly from whichever grip is attached, and the MTQ's change with
+the handle — MOZA's software explicitly redraws its button diagram when you swap
+handles. So these numbers are correct for an **AB6 + MHG + MTQ/TQF** rig and should
+not be assumed on a different combination.
+
+Two earlier inferences in this document have since been **confirmed** against MOZA's
+manuals and support pages: buttons 41/42 really are the afterburner detent pair, and
+the 5–16 block really is a labelled physical cluster — MOZA's own guidance points
+the MTQ's rotary encoders at exactly the HDG / ALT / SPD / V/S functions bound there.
 
 ## Source
 

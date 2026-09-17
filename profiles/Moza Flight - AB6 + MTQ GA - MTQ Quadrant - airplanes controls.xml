@@ -1045,11 +1045,7 @@
 				<KEY Information="Joystick Button 43">42</KEY>
 			</Primary>
 		</Action>
-		<Action ActionName="KEY_TOGGLE_BEACON_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
-			<Primary>
-				<KEY Information="Joystick Button 41">40</KEY>
-			</Primary>
-		</Action>
+		<Action ActionName="KEY_TOGGLE_BEACON_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_CABIN_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ELECT_FUEL_PUMP" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_ELECT_FUEL_PUMP1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
@@ -1081,11 +1077,7 @@
 		<Action ActionName="KEY_TOGGLE_MASTER_BATTERY_ALTERNATOR" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_MASTER_IGNITION_SWITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_MASTER_STARTER_SWITCH" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
-		<Action ActionName="KEY_TOGGLE_NAV_LIGHTS" ValueEvent="0.000000" Delay="2.000000" Flag="2">
-			<Primary>
-				<KEY Information="Joystick Button 42">41</KEY>
-			</Primary>
-		</Action>
+		<Action ActionName="KEY_TOGGLE_NAV_LIGHTS" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_PRIMER" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_PRIMER1" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>
 		<Action ActionName="KEY_TOGGLE_PRIMER2" ValueEvent="0.000000" Delay="0.000000" Flag="2"/>

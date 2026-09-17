@@ -134,10 +134,21 @@ MTQ_AIRPLANES = [
     ("KEY_LANDING_LIGHTS_TOGGLE",   F_BUTTON, ["btn:25"]),
     ("KEY_TOGGLE_TAXI_LIGHTS",      F_BUTTON, ["btn:27"]),
     ("KEY_GEAR_TOGGLE",             F_TOGGLE, ["btn:29"]),
-    # 41/42 were the afterburner detent pair in the Fighter profile. A GA
-    # aeroplane has no use for that, so they become the remaining light switches.
-    ("KEY_TOGGLE_BEACON_LIGHTS",    F_BUTTON, ["btn:41"]),
-    ("KEY_TOGGLE_NAV_LIGHTS",       F_BUTTON, ["btn:42"]),
+    # Buttons 41 and 42 are DELIBERATELY LEFT UNBOUND on the TQF handle.
+    #
+    # They are the afterburner-zone virtual buttons that the MTQ's detent
+    # feature generates (MOZA support: the detent function "adds six virtual
+    # buttons" for the Cutoff / Idle / Afterburner zones). On the TQF they
+    # assert whenever a throttle lever crosses the afterburner detent - which
+    # in a GA aeroplane is simply "full power for takeoff". Anything bound
+    # here fires on every departure and go-around.
+    #
+    # An earlier revision had beacon and nav lights on them, which would have
+    # flipped both lights on every takeoff roll.
+    #
+    # If you remove the detent mechanically (MOZA document this) these become
+    # free, but they are unsafe to use while the afterburner detent is fitted.
+    #
     # 43 was spoiler arm, which GA aircraft do not have.
     ("KEY_TOGGLE_AVIONICS_MASTER",  F_BUTTON, ["btn:43"]),
     ("KEY_AXIS_ELEV_TRIM_SET",      F_AXIS,   ["btn:64"]),
